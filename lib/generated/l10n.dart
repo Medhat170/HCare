@@ -1035,6 +1035,26 @@ class S {
     );
   }
 
+  /// `فحوصات`
+  String get checkup {
+    return Intl.message(
+      'فحوصات دورية',
+      name: 'checkup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `متابعة المريض`
+  String get followup {
+    return Intl.message(
+      'متابعة المريض',
+      name: 'followup',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `مقالات`
   String get articles {
     return Intl.message(

@@ -1,5 +1,7 @@
 import 'package:careve/app/components/global_scaffold.dart';
 import 'package:careve/app/models/section.dart';
+import 'package:careve/app/screens/checkup/CheckupImports.dart';
+import 'package:careve/app/screens/followUp/FollowUpImports.dart';
 import 'package:careve/app/screens/home/components/section_item.dart';
 import 'package:careve/app/screens/home/components/user_semi_profile.dart';
 import 'package:careve/app/routes/app_pages.dart';
@@ -17,10 +19,7 @@ class HomeView extends GetView<HomeController> {
     return GlobalScaffold(
       body: UserSemiProfile(
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 20.0,
-            vertical: 10.0,
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
           child: NotificationListener<OverscrollIndicatorNotification>(
             onNotification: (OverscrollIndicatorNotification overScroll) {
               overScroll.disallowGlow();
@@ -28,7 +27,7 @@ class HomeView extends GetView<HomeController> {
             },
             child: GridView(
               shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
+              // physics: const NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
@@ -36,7 +35,7 @@ class HomeView extends GetView<HomeController> {
                 mainAxisExtent: (Get.height -
                         Get.mediaQuery.padding.top -
                         Get.mediaQuery.padding.bottom) /
-                    4,
+                    4.5,
               ),
               children: [
                 if (!isDoc)
@@ -74,7 +73,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                 Section(
                   name: S.of(context).awareness,
-                  image: PathUtil.articlesImage,
+                  image: PathUtil.awareness,
                   onPressed: () => Get.toNamed(Routes.AWARENESS),
                 ),
                 if (!isDoc)
@@ -83,6 +82,22 @@ class HomeView extends GetView<HomeController> {
                     image: PathUtil.doctorsImage,
                     onPressed: () => Get.toNamed(Routes.DOCTORS),
                   ),
+                Section(
+                  name: S.of(context).checkup,
+                  image: PathUtil.checkup,
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Checkup())),
+                ),
+                Section(
+                  name: S.of(context).followup,
+                  image: PathUtil.followup,
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const FollowUp())),
+                ),
               ]
                   .map(
                     (section) => SectionItem(

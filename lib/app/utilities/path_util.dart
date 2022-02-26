@@ -26,6 +26,9 @@ class PathUtil {
   static const String googleIcon = '${iconsPath}googleIcon.png';
   static const String logoIcon = '${iconsPath}logo.png';
   static const String emptyLottie = '${lottiePath}empty.json';
+  static const String checkup = '${imagesPath}regular.png';
+  static const String followup = '${imagesPath}followup.png';
+  static const String awareness = '${imagesPath}awareness.png';
 }
 
 class ApiPath {

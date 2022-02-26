@@ -112,7 +112,7 @@ class UserSemiProfile extends StatelessWidget {
           bottom: 0.0,
           left: 0.0,
           right: 0.0,
-          top: (height * 0.4) - 50.0,
+          top: (height * 0.4) - 110.0,
           child: child,
         ),
       ],

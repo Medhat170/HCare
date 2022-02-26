@@ -34,7 +34,7 @@ class SectionItem extends StatelessWidget {
             borderRadius: AppUtil.borderRadius,
           ),
           child: Container(
-            width: Get.width * 0.5,
+            width: Get.width * 0.4,
             padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: Column(
               children: [

@@ -38,7 +38,7 @@ class MedicalRecordsView extends GetView<MedicalRecordsController>
                 } else {
                   return AnimatedListHandler(
                     children: [
-                      if (!controller.isDoc) DoctorHintCard(),
+                      // if (!controller.isDoc) DoctorHintCard(),
                       if (controller.isDoc &&
                           controller.patientData.value != null)
                         PatientDataCard(

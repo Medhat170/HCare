@@ -28,6 +28,8 @@ abstract class Routes {
   static const ADD_EDIT_RECORD = _Paths.ADD_EDIT_RECORD;
   static const CLINIC_EDITING = _Paths.CLINIC_EDITING;
   static const DOCTOR_CLINICS = _Paths.DOCTOR_CLINICS;
+  static const FollowUp = _Paths.FollowUp;
+  static const Checkup = _Paths.CheckUp;
 }
 
 abstract class _Paths {
@@ -57,4 +59,6 @@ abstract class _Paths {
   static const ADD_EDIT_RECORD = '/add-edit-record';
   static const CLINIC_EDITING = '/clinic-editing';
   static const DOCTOR_CLINICS = '/doctor-clinics';
+  static const FollowUp = '/followUp';
+  static const CheckUp = '/checkup';
 }
