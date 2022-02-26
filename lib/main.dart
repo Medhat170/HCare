@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       builder: () => GestureDetector(
         onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
         child: GetMaterialApp(
-          title: 'Careve',
+          title: 'HCare',
           debugShowCheckedModeBanner: false,
           theme: AppUtil.appTheme,
           getPages: AppPages.routes,
