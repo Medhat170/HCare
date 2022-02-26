@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:careve/app/models/message.dart';
-import 'package:careve/app/modules/chat/bindings/chat_binding.dart';
-import 'package:careve/app/modules/chat/controllers/chat_controller.dart';
+import 'package:careve/app/screens/chat/bindings/chat_binding.dart';
+import 'package:careve/app/screens/chat/controllers/chat_controller.dart';
 import 'package:careve/app/routes/app_pages.dart';
 import 'package:careve/app/services/auth_service.dart';
 import 'package:careve/app/utilities/app_util.dart';

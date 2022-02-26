@@ -1,4 +1,4 @@
-import 'package:careve/app/modules/saved/controllers/saved_controller.dart';
+import 'package:careve/app/screens/saved/controllers/saved_controller.dart';
 import 'package:careve/app/services/auth_service.dart';
 import 'package:careve/app/services/cache/cache_service.dart';
 import 'package:careve/app/services/cache/setting_repo.dart';

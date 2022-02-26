@@ -1008,8 +1008,8 @@ class S {
   /// `الفحص الذاتى`
   String get selfChecking {
     return Intl.message(
-      'الفحص الذاتى',
-      name: 'selfChecking',
+      'رعاية الطفل', // changed from self checking
+      name: 'Baby Care',
       desc: '',
       args: [],
     );
@@ -1278,7 +1278,7 @@ class S {
   /// `الخطوة الأولى (أمام المرآة)`
   String get firstStep {
     return Intl.message(
-      'الخطوة الأولى (أمام المرآة)',
+      'الخطوات المتبعه بعد ولادة الطفل لضمان',
       name: 'firstStep',
       desc: '',
       args: [],
@@ -1288,7 +1288,7 @@ class S {
   /// `1- انظري إلى الثديين في المرآة مع وضعي يديك في وضع مستقيم على الجانبين ثم ضعي يديك في المنتصف.`
   String get firstStepSubStep1 {
     return Intl.message(
-      '1- انظري إلى الثديين في المرآة مع وضعي يديك في وضع مستقيم على الجانبين ثم ضعي يديك في المنتصف.',
+      'ان يكون الطفل خالى من الامراض الوراثية والعضويه',
       name: 'firstStepSubStep1',
       desc: '',
       args: [],
@@ -1308,7 +1308,7 @@ class S {
   /// `- ملاحظة العلامات التالية في الثدي`
   String get noticeSign {
     return Intl.message(
-      '- ملاحظة العلامات التالية في الثدي',
+      'كيف يمكن تشخيص الطفل',
       name: 'noticeSign',
       desc: '',
       args: [],
@@ -1318,7 +1318,7 @@ class S {
   /// `الخطوة الثانية (أمام المرآة)`
   String get secondStep {
     return Intl.message(
-      'الخطوة الثانية (أمام المرآة)',
+      'كيف يمكن تشخيص الطفل',
       name: 'secondStep',
       desc: '',
       args: [],
@@ -1328,7 +1328,7 @@ class S {
   /// `1- ارفعي يديك وتأكدي من عدم وجود التغييرات السابقة.`
   String get secondStepSubStep1 {
     return Intl.message(
-      '1- ارفعي يديك وتأكدي من عدم وجود التغييرات السابقة.',
+      '1- بتباع التحاليل بعد الولادة مباشره.',
       name: 'secondStepSubStep1',
       desc: '',
       args: [],
@@ -1338,7 +1338,7 @@ class S {
   /// `2- أثناء رفع يديك ، لاحظي إفرازات غير طبيعية أو دماء من الحلمة اليمنى أو اليسرى.`
   String get secondStepSubStep2 {
     return Intl.message(
-      '2- أثناء رفع يديك ، لاحظي إفرازات غير طبيعية أو دماء من الحلمة اليمنى أو اليسرى.',
+      '2- الفحص الطبي السريع.',
       name: 'secondStepSubStep2',
       desc: '',
       args: [],
