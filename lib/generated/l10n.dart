@@ -998,7 +998,7 @@ class S {
   /// `أطباء`
   String get doctors {
     return Intl.message(
-      'أطباء',
+      'أطباء/مراكز',
       name: 'doctors',
       desc: '',
       args: [],

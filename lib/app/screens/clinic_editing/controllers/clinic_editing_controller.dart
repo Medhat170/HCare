@@ -52,7 +52,10 @@ class ClinicEditingController extends GetxController with BusyMixin, ApiMixin {
   }
 
   String changeClinicTitle(String title) {
-    clinic.value?.address?.title = title;
+    if(clinic.value.address == null)clinic.value.address = clinicDto.Address();
+    clinic.update((val) {
+      val.address?.title = title;
+    });
     return title;
   }
 

@@ -31,7 +31,7 @@ class ClinicEditingView extends GetView<ClinicEditingController>
           Expanded(
             child: Obx(
               () {
-                print(controller.clinic.value);
+                print(controller.clinic.value.mobile);
                 final clinicData = controller.clinic.value;
                 return Padding(
                   padding: const EdgeInsets.symmetric(
@@ -42,6 +42,9 @@ class ClinicEditingView extends GetView<ClinicEditingController>
                     key: controller.clinicFormKey,
                     child: AnimatedListHandler(
                       children: [
+
+
+                        //علامه مميزه
                         AuthInputField(
                           S.current.mark,
                           TextEditingController(
@@ -54,13 +57,15 @@ class ClinicEditingView extends GetView<ClinicEditingController>
                             );
                           },
                           validator: const QuickTextValidator().call,
-                        ),
+                        )  ,
+
+                        //عنوان
                         AuthInputField(
                           S.current.address,
                           TextEditingController(
                             text: clinicData?.address?.formattedAddress,
                           ),
-                          loading: true,
+                          loading: false,
                           onChanged: (String value) {
                             controller.changeAddress(
                               formattedAddress: value,
@@ -117,6 +122,8 @@ class ClinicEditingView extends GetView<ClinicEditingController>
                             },
                           ),
                         ),
+
+                        //رقم موبيل
                         AuthInputField(
                           S.current.phoneNumber,
                           TextEditingController(
@@ -126,7 +133,7 @@ class ClinicEditingView extends GetView<ClinicEditingController>
                           keyBoardType: TextInputType.number,
                           onChanged: (String value) {
                             controller.changePhone(value);
-                          },
+                          },isPhone:true ,
                           validator: const QuickTextValidator(
                             isPhone: true,
                           ).call,
